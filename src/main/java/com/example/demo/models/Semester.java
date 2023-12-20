@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student extends  User {
-    private String speciality ;
+public class Semester {
+    private long id ;
+    private int number;
+
 }

@@ -1,8 +1,14 @@
 package com.example.demo.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     private long id ;
@@ -11,7 +17,4 @@ public class User {
     private String email ;
     private String password ;
 
-    public void login( String email , String password) {
-
-    }
 }
