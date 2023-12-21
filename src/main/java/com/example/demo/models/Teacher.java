@@ -7,8 +7,6 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table
 public class Teacher extends User {
