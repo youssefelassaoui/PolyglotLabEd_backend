@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Builder
-@NoArgsConstructor
+
 @AllArgsConstructor
 public class Teacher extends User {
 
