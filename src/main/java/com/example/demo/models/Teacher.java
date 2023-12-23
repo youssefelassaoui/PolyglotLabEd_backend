@@ -1,12 +1,14 @@
 package com.example.demo.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import jakarta.persistence.*;
+import jakarta.persistence.Table;
 import lombok.NoArgsConstructor;
 
-@Builder
 
-@AllArgsConstructor
-public class Teacher extends User {
+@Entity
+@Table
+@NoArgsConstructor
 
+public class Teacher extends Userl {
+    private String speciality ;
 }

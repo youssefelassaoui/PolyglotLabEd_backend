@@ -1,12 +1,13 @@
 package com.example.demo.models;
 
+import jakarta.persistence.*;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-
 @AllArgsConstructor
-public class Admin extends  User {
+@Entity
+@Table
+public class Admin extends Userl {
 }
