@@ -8,6 +8,6 @@ import lombok.*;
 @Table
 @NoArgsConstructor
 
-public class Teacher extends Userl {
+public class Teacher extends Userk {
     private String speciality ;
 }

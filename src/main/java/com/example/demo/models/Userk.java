@@ -9,17 +9,18 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Userl implements UserDetails {
+public class Userk implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
-    private String firstName ;
-    private String lastName;
+    private String firstname ;
+    private String lastname;
     private String email ;
     private String password ;
     @Enumerated(EnumType.STRING)

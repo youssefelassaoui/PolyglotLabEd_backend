@@ -7,5 +7,5 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table
-public class Admin extends Userl {
+public class Admin extends Userk {
 }
