@@ -1,12 +1,18 @@
 package com.example.demo.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
 
 @Data
-@Builder
 @AllArgsConstructor
-public class Admin extends  User {
+@Entity
+@Table
+public class Admin extends Userk {
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "admin")
+    List<Content> adminContents ;
 }

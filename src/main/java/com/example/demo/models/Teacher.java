@@ -1,11 +1,19 @@
 package com.example.demo.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Builder
+
 @AllArgsConstructor
-public class Teacher extends User {
+@Entity
+@Table
+@NoArgsConstructor
 
+public class Teacher extends Userk {
+    private String speciality ;
+
+    // Subject Teacher Relationship
+    @ManyToOne( cascade = CascadeType.ALL)
+    @JoinColumn(name = "subject_id", referencedColumnName = "id")
+    private Subject subject ;
 }
